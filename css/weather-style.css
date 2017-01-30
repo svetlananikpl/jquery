@@ -1,0 +1,210 @@
+.weather {
+    width: 307px;
+    height: 312px;
+    position: relative;
+}
+
+.weather-menu {
+    height: 64px;
+    background: #ffffff;
+    font-size: 0;
+}
+
+.weather-menu button {
+    transition: background 0.5s;
+    background: #ffffff;
+    color: #dedede;
+    position: relative;
+}
+
+.weather-menu button:hover, .weather-menu button.selected-scale {
+    background: #ff8989;
+    color: #ffffff;
+}
+
+.scale-button {
+    width: 79px;
+    height: 100%;
+    font-size: 40.75px;
+}
+
+
+.add-place-button {
+    width: 79px;
+    height: 100%;
+}
+
+.add-place-button:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/weather-spritesheet.png") -6px no-repeat;
+    position: absolute;
+    top: 9px;
+    left: 23px;
+}
+
+.list-view-button {
+    width: 70px;
+    height: 100%;
+}
+
+.list-view-button:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/weather-spritesheet.png") -55px no-repeat;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+
+.weather-board {
+    height: 248px;
+    width: 307px;
+    position: relative;
+    overflow: hidden;
+}
+/*______________________________________________________________-*/
+.image-weather {
+    height: 248px;
+    width: 307px;
+    position: relative;
+}
+
+.image-weather .window {
+    height: 248px;
+    width: 307px;
+    overflow: hidden;
+    position: relative;
+}
+.input-location{
+    height: 228px;
+    width: 287px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(238, 241, 244);
+    padding: 10px;
+    z-index: 99;
+}
+
+.input-location input{
+    margin-bottom: 15px;
+    display: block;
+    padding: 4px;
+    width: 279px;
+}
+.input-location button {
+    width: 279px;
+    background-color: white;
+    color: #05aeb3;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-location button:hover {
+    background-color: #05aeb3;
+    color: white;
+}
+
+
+.image_reel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_reel a {
+    position: relative;
+    float: left;
+    width: 307px;
+}
+
+.image_reel img {
+    height: 248px;
+    width: 307px;
+}
+
+.image_reel .weather-info {
+    position: absolute;
+    width: 235px;
+    bottom: 6px;
+    left: 12px;
+}
+
+.image_reel .weather-info p {
+    color: white;
+    font-size: 16.75px;
+    margin: 0 0 2px 0;
+    z-index: 99;
+}
+
+.image_reel .weather-info .temperature {
+    font-size: 50px;
+    margin: 0 0 -5px -3px;
+}
+
+.image_reel .weather-info .temperature::after {
+    content: "°";
+    font-size: 25px;
+    vertical-align: 27px;
+}
+
+.paging {
+    position: absolute;
+    bottom: 7px;
+    right: 6px;
+    z-index: 98;
+}
+
+.paging a {
+    display: inline-block;
+    margin-right: 5px;
+    height: 7px;
+    width: 7px;
+    text-decoration: none;
+    background: #05aeb3;
+    border-radius: 50%;
+
+}
+
+.paging a.active {
+    background: #076164;
+}
+
+
+.burger-list {
+    position: absolute;
+    right: 0;
+    bottom: 64px;
+    background: #ffffff;
+    z-index: 99;
+}
+
+.burger-list li {
+    min-height: 20px;
+    transition: background 1s;
+    padding: 15px 17px;
+    position: relative;
+    color: #bac2c7;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.burger-list li{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.burger-list li:hover {
+    background: #f2f2f2;
+}

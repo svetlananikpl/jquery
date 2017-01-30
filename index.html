@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms&Widgets</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/converter-style.css">
+    <link rel="stylesheet" href="./css/weather-style.css">
+    <link rel="stylesheet" href="./css/buttons-style.css">
+    <link rel="stylesheet" href="./css/login-style.css">
+    <link rel="stylesheet" href="./css/chat-style.css">
+    <link rel="stylesheet" href="./css/circles-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app/index.js"></script>
+</head>
+<body>
+
+<div class="converter clearfix">
+    <ul class="currency-list">
+        <li>
+            <div class="currency-name">
+                <p>USD</p>
+            </div>
+            <input id="usd" type="number" class="currency-input usd" value="0">
+            <label for="usd">$</label>
+        </li>
+        <li>
+            <div class="currency-name">
+                <p>GBP</p>
+            </div>
+            <input id="gbr" type="number" class="currency-input gbr" value="0">
+            <label for="gbr">£</label>
+        </li>
+    </ul>
+    <nav class="converter-menu">
+        <button class="convert-button"></button>
+        <button class="number-pad"></button>
+        <button class="add-currency"></button>
+    </nav>
+</div>
+
+
+<div class="weather clearfix">
+    <div class="image-weather">
+        <div class="window">
+            <div class="image_reel">
+                <a class="clearfix" href="#">
+                    <img src="img/greace.jpg" alt=""/>
+
+                    <div class="weather-info">
+                        <p class="temperature">24</p>
+
+                        <p class="location">Zagora, Greece </p>
+
+                        <p class="time">8:34 am</p>
+                    </div>
+                </a>
+                <a class="clearfix" href="#"><img src="img/venec.jpg" alt=""/>
+
+                    <div class="weather-info">
+                        <p class="temperature">29</p>
+
+                        <p class="location">Venec, Italy </p>
+
+                        <p class="time">9:34 am</p>
+                    </div>
+                </a>
+
+                <a class="clearfix" href="#"><img src="img/rom.jpg" alt=""/>
+
+                    <div class="weather-info">
+                        <p class="temperature">32</p>
+
+                        <p class="location">Rom, Italy </p>
+
+                        <p class="time">9:34 am</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="paging">
+                <a class="active" href="#" rel="1"></a>
+                <a href="#" rel="2"></a>
+                <a href="#" rel="3"></a>
+            </div>
+        </div>
+        <div class="input-location" id="inputArea">
+            <form>
+                <label>Temperature:</label><input id="temperature" type="text"/>
+
+                <label>Location:</label><input id="location" type="text" />
+
+                <label>Image:</label><input id="imageLocation" type="text" />
+
+                <button>Add Location</button>
+            </form>
+        </div>
+    </div>
+    <nav class="weather-menu">
+        <button class="scale-button" id="fahrenheit">F</button>
+        <button class="scale-button selected-scale" id="celsius">C</button>
+        <button class="add-place-button"></button>
+        <button class="list-view-button"></button>
+    </nav>
+
+</div>
+
+
+<div class="circles">
+    <div class="circle-around">
+        <div class="circle-around-background"></div>
+        <div class="circle-around-slice first-value">
+            <div class="pie"></div>
+        </div>
+        <div class="circle-around-slice second-value">
+            <div class="pie"></div>
+        </div>
+        <div class="circle-around-slice third-value">
+            <div class="pie"></div>
+        </div>
+        <div class="circle-around-inside"></div>
+    </div>
+    <div class="circle-fill">
+        <div class="circle-fill-background"></div>
+        <div id="circle-fill-first-value" class="circle-fill-slice first-value">
+            <div class="pie"></div>
+        </div>
+        <div id="circle-fill-second-value" class="circle-fill-slice second-value">
+            <div class="pie"></div>
+        </div>
+        <div id="circle-fill-third-value" class="circle-fill-slice third-value">
+            <div class="pie"></div>
+        </div>
+    </div>
+    <div class="circle-straight">
+        <div class="circle-straight-first-value"></div>
+        <div class="circle-straight-second-value"></div>
+        <div class="circle-straight-third-value"></div>
+    </div>
+    <input class="circle-input-first-value" placeholder="value %" type="text" name="" value="">
+    <input class="circle-input-second-value" placeholder="value %" type="text" name="" value="">
+    <input class="circle-input-third-value" placeholder="value %" type="text" name="" value="">
+    <button class="circle-button">DRAW</button>
+</div>
+
+
+<div class="buttons-block clearfix">
+    <input type="text" class="valid-input" placeholder="Valid input">
+</div>
+
+
+<div class="login-block">
+    <div class="email-block">
+        <input type="email" id="email" placeholder="Email Address...">
+        <label for="email"></label>
+    </div>
+    <div class="password-block">
+        <input type="password" id="password" placeholder="Password...">
+        <label for="password"></label>
+    </div>
+    <button class="signup-button" data-tooltip="signed up">Sign up
+        <span class="tooltip" id="tooltipSignedUp"></span>
+    </button>
+
+    <button class="signin-button" data-tooltip="signed in">Sign in
+        <span class="tooltip" id="tooltipSignedIn"></span>
+    </button>
+
+</div>
+
+
+<div class="chat clearfix">
+    <nav class="chat-menu">
+        <button class="menu-button"></button>
+        <input type="text" placeholder="New User" id="newUser">
+        <button class="add-dlg-button" id="addUser"></button>
+    </nav>
+    <ul class="message-list">
+        <li class="online">
+            <a href=""><img class="avatar" src="./img/1.png" alt="Profile photo"></a>
+
+            <h3>Yaroslav Lozhkin</h3>
+
+            <p class="message">Alright got it!</p>
+        </li>
+        <li class="sent offline">
+            <a href=""><img class="avatar" src="./img/2.png" alt="Profile photo"></a>
+
+            <h3>Michael Zenaty</h3>
+
+            <p class="message"></p>
+        </li>
+        <li class="typing">
+            <a href=""><img class="avatar" src="./img/3.png" alt="Profile photo"></a>
+
+            <h3>Wells Riley</h3>
+
+            <p class="message"></p>
+        </li>
+        <li class="not-delivered">
+            <a href=""><img class="avatar" src="./img/4.png" alt="Profile photo"></a>
+
+            <h3>Matt Vickers</h3>
+
+            <p class="message"></p>
+        </li>
+        <li class="busy">
+            <a href=""><img class="avatar" src="./img/5.png" alt="Profile photo"></a>
+
+            <h3>Divya Manian</h3>
+
+            <p class="message">You can download it on git
+                You can download it on git</p>
+        </li>
+        <li>
+            <a href=""><img class="avatar" src="./img/6.png" alt="Profile photo"></a>
+
+            <h3>Vin Thomas</h3>
+
+            <p class="message">Thank you!</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+.circles {
+    width: 200px;
+    height: 800px;
+    background: #fff;
+    position: absolute;
+    top: 57px;
+    left: 424px;
+    text-align: center;
+}
+
+.circle-around,
+.circle-fill {
+    height: 160px;
+    margin: 20px;
+}
+
+.circle-around-background,
+.circle-fill-background {
+    width: 160px;
+    height: 160px;
+    background: #efefef;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pie {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    clip: rect(0px, 80px, 160px, 0px);
+}
+
+.circle-around-slice,
+.circle-fill-slice {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    clip: rect(0px, 160px, 160px, 80px);
+}
+
+.first-value .pie {
+    background-color: #56e5f6;
+    transform: rotate(40deg);
+}
+
+.first-value {
+    transform: rotate(0deg);
+}
+
+.second-value .pie {
+    background-color: #4cd9c0;
+    transform: rotate(50deg);
+}
+
+.second-value {
+    transform: rotate(40deg);
+}
+
+.third-value .pie {
+    background-color: #ec747d;
+    transform: rotate(80deg);
+}
+
+.third-value {
+    transform: rotate(90deg);
+}
+
+
+.circle-straight {
+    width: 160px;
+    height: 160px;
+    background: #efefef;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.circle-around-inside {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 22px;
+}
+
+.circle-straight-first-value {
+    width: 160px;
+    height: 20px;
+    background: #56e5f6;
+    position: absolute;
+    bottom: 0;
+}
+
+.circle-straight-second-value {
+    width: 160px;
+    height: 27px;
+    background: #4cd9c0;
+    position: absolute;
+    bottom: 20px;
+}
+
+.circle-straight-third-value {
+    width: 160px;
+    height: 40px;
+    background: #ec747d;
+    position: absolute;
+    bottom: 47px;
+}
+
+.circle-input-first-value,
+.circle-input-second-value,
+.circle-input-third-value {
+    width: 160px;
+    height: 51px;
+    border-radius: 12px;
+    font-size: 20.38px;
+    padding: 13px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+
+.circle-input-first-value {
+    border: 2px solid #56e5f6;
+}
+
+.circle-input-second-value {
+    border: 2px solid #4cd9c0;
+}
+
+.circle-input-third-value {
+    border: 2px solid #ec747d;
+}
+
+.circle-button {
+    width: 120px;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 46px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.circle-button:hover, .circle-button.active {
+    background: #4cd9c0;
+}
+
+.circle-button.active:hover {
+    color: #fff;
+}

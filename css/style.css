@@ -1,0 +1,46 @@
+body {
+    padding: 57px 58px 57px 67px;
+    background: #efefef;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18.11px;
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    transition: background 0.5s;
+}
+
+button, input {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
